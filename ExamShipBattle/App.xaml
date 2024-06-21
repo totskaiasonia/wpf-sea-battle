@@ -1,0 +1,15 @@
+﻿<Application x:Class="ExamShipBattle.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ExamShipBattle"
+             StartupUri="./View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="View/Custom/Cell/CellStyles.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="View/Custom/Field/FieldStyles.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="View/Custom/Statistics/StatisticsStyles.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

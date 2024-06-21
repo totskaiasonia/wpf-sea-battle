@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="ExamShipBattle.View.Custom.Cell.CellView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExamShipBattle.View.Custom.Cell"
+             mc:Ignorable="d" 
+             d:DesignHeight="16" d:DesignWidth="16">
+    <Grid Name="CellGrid">
+        <Button Name="CellBtn" Style="{DynamicResource Free_Style}" Command="{Binding ChangeStyle}">
+            <Image Name="CellImg" Style="{DynamicResource HiddenImage_Style}"></Image>
+        </Button>
+    </Grid>
+</UserControl>

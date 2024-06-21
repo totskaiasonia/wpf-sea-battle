@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="ExamShipBattle.View.Custom.Statistics.StatisticsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExamShipBattle.View.Custom.Statistics"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid Style="{DynamicResource Grid_Style}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Name="PlayerNameLabel" Style="{DynamicResource Label_Style}" Content="{Binding PlayerNameStr}"></Label>
+        <Label Name="TotalLabel" Grid.Row="1" Style="{DynamicResource Label_Style}" Content="{Binding TotalStr}"></Label>
+        <Label Name="WinsLabel" Grid.Row="2" Style="{DynamicResource Label_Style}" Content="{Binding WinsStr}"></Label>
+        <Label Name="LossesLabel" Grid.Row="3" Style="{DynamicResource Label_Style}" Content="{Binding LossesStr}"></Label>
+    </Grid>
+</UserControl>

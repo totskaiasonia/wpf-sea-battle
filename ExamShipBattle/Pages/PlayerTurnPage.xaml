@@ -1,0 +1,55 @@
+﻿<Page x:Class="ExamShipBattle.Pages.PlayerTurnPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ExamShipBattle.Pages"
+      xmlns:field="clr-namespace:ExamShipBattle.View.Custom.Field"
+      xmlns:statistics="clr-namespace:ExamShipBattle.View.Custom.Statistics"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PlayerTurnPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="1.7*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Name="CurrentPlayerLabel" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Margin="20 0 0 0">Player1`s turn</Label>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Name="PlayerFieldGrid" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalAlignment="Center" FontSize="17" FontWeight="Medium">Your ships</Label>
+            </Grid>
+            <Grid Name="PlayerMovesGrid" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalAlignment="Center" FontSize="17" FontWeight="Medium">Your moves</Label>
+            </Grid>
+        </Grid>
+        <Grid Name="StatisticsGrid" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Name="NewGameBtn" Grid.Row="1" Width="130" Height="35" Command="{Binding StartANewGame}">Start a new game</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

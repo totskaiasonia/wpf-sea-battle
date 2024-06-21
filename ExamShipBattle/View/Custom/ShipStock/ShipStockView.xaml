@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="ExamShipBattle.View.Custom.ShipStock.ShipStockView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExamShipBattle.View.Custom.ShipStock"
+             mc:Ignorable="d" 
+             d:DesignHeight="76" d:DesignWidth="76">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Name="Stock1StackPanel" Grid.Row="0" Orientation="Horizontal"></StackPanel>
+        <StackPanel Name="Stock2StackPanel" Grid.Row="1" Orientation="Horizontal"></StackPanel>
+        <StackPanel Name="Stock3StackPanel" Grid.Row="2" Orientation="Horizontal"></StackPanel>
+        <StackPanel Name="Stock4StackPanel" Grid.Row="3" Orientation="Horizontal"></StackPanel>
+    </Grid>
+</UserControl>

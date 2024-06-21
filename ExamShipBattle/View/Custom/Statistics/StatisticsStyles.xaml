@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ExamShipBattle.View.Custom.Statistics">
+
+    <Style x:Key="Label_Style" TargetType="Label">
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+    </Style>
+
+    <Style x:Key="Grid_Style" TargetType="Grid">
+        <Setter Property="Background" Value="#FFE6E1EE"></Setter>
+        <Setter Property="Opacity" Value="0.9"></Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,77 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ExamShipBattle.View.Custom.Cell">
+    <Style x:Key="Free_Style" TargetType="Button">
+        <Setter Property="Background" Value="#FFE6F5B3"></Setter>
+        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      Content="{TemplateBinding Content}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <!--<Setter Property="BorderThickness" Value="3"></Setter>
+                            <Setter Property="BorderBrush" Value="#FF0E5E72"></Setter>
+                            <Setter Property="Background" Value="#FF8ADEF3"></Setter>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="HiddenImage_Style" TargetType="Image">
+        <Setter Property="Visibility" Value="Hidden"></Setter>
+    </Style>
+
+    <Style x:Key="Ship_Style" TargetType="Button">
+        <Setter Property="BorderThickness" Value="3"></Setter>
+        <Setter Property="BorderBrush" Value="#FF0E5E72"></Setter>
+        <Setter Property="Background" Value="#FF8ADEF3"></Setter>
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      Content="{TemplateBinding Content}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <!--<Setter Property="BorderThickness" Value="3"></Setter>
+                            <Setter Property="BorderBrush" Value="#FF0E5E72"></Setter>
+                            <Setter Property="Background" Value="#FF8ADEF3"></Setter>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Unavailable_Style" TargetType="Image">
+        <Setter Property="Visibility" Value="Visible"></Setter>
+        <Setter Property="Source" Value="/Resources/dot.png"></Setter>
+    </Style>
+    
+    <Style x:Key="Killed_Style" TargetType="Image">
+        <Setter Property="Visibility" Value="Visible"></Setter>
+        <Setter Property="Source" Value="/Resources/cross.png"></Setter>
+    </Style>
+</ResourceDictionary>
